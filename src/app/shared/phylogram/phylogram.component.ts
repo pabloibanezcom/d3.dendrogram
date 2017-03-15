@@ -13,7 +13,7 @@ export class PhylogramComponent implements OnInit {
   data: any;
 
   constructor(private http: Http) {
-    http.get('assets/data.v4.json')
+    http.get('assets/d3-dendrogram.json')
       .map(res => res.json())
       .subscribe(data => this.render(data),
       err => console.log(err));
@@ -25,12 +25,11 @@ export class PhylogramComponent implements OnInit {
   render(data: any) {
     this.data = data;
     d3.phylogram.build('#phylogram', this.data, {
-      width: 950,
+      width: 800,
       //height: 500,
-      labelHeight: 30,
+      labelHeight: 40,
       skipLabels: false,
-      alignLabels: true,
-      ratioLengthPropertyName: 'substitutability',
+      ratioLengthPropertyName: 'dist',
       namePropertyName: 'name'
     });
   }

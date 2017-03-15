@@ -13,7 +13,6 @@
                             "children": [
                                 {
                                     "children": [],
-                                    "dist": 0,
                                     "name": "Diet Coke 330ml"
                                 },
                                 {
@@ -35,7 +34,6 @@
                             "children": [
                                 {
                                     "children": [],
-                                    "dist": 0,
                                     "name": "Coke 2l bottle"
                                 },
                                 {
@@ -44,7 +42,7 @@
                                     "name": "Diet Coke 2l bottle"
                                 }
                             ],
-                            "dist": 1.3464052138936478,
+                            "dist": 1.3264052138936478,
                             "name": ""
                         },
                         {
@@ -60,11 +58,11 @@
                                     "name": "Fanta 2l bottle"
                                 }
                             ],
-                            "dist": 1.3818364592092653,
+                            "dist": 1.3018364592092653,
                             "name": ""
                         }
                     ],
-                    "dist": 1.3961608073570895,
+                    "dist": 1.3561608073570895,
                     "name": ""
                 }
             ],

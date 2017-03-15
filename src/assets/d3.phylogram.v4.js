@@ -27,7 +27,7 @@ if (!d3) { throw "d3 wasn't included!" };
     d3.phylogram.labelNodes = 0;
     checkNode(rootNode);
     function checkNode(node) {
-      if (!node.children) {
+      if (!node.children || !node.children.length) {
         d3.phylogram.labelNodes++;
       } else {
         node.children.forEach(checkNode);
@@ -73,18 +73,17 @@ if (!d3) { throw "d3 wasn't included!" };
 
   d3.phylogram.applyLengthRatio = function (rootNode, d, options) {
     const ratioLengthProperty = options.ratioLengthPropertyName || 'ratioLength';
+    const fullScale = rootNode.data[ratioLengthProperty];
     applyLengthRatioToNode(rootNode);
 
     function applyLengthRatioToNode(node) {
       // Calculate length
       if (node.parent) {
-        let length = node.data[ratioLengthProperty];
-        if (!node.children && options.alignLabels) {
-          length = 1 - getAncestryLength(node);
-        }
-        node.y = node.parent.y + (d.w * length);
+        node.data[ratioLengthProperty] = node.data[ratioLengthProperty] || 0;
+        let length = node.parent.data[ratioLengthProperty] - node.data[ratioLengthProperty];
+        node.y = calculateYPosition(length, node.parent.y);
       }
-      if (node.children) {
+      if (node.children && node.children.length) {
         node.children.forEach(applyLengthRatioToNode);
       }
     }
@@ -99,6 +98,10 @@ if (!d3) { throw "d3 wasn't included!" };
         }
       }
       return result;
+    }
+
+    function calculateYPosition(length, parentY) {
+      return parentY + (d.w * (length / fullScale));
     }
   }
 
@@ -162,6 +165,7 @@ if (!d3) { throw "d3 wasn't included!" };
   d3.phylogram.build = function (selector, data, options) {
     options = options || {}
 
+    data = data.children[0];
     const d = d3.phylogram.generateDimensions(selector, data, options);
     const vis = d3.phylogram.createVis(selector, d);
     const rootNode = d3.phylogram.transformRootNode(data, d);
