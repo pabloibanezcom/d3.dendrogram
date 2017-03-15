@@ -1,0 +1,77 @@
+{
+    "children": [
+        {
+            "children": [
+                {
+                    "children": [
+                        {
+                            "children": [],
+                            "dist": 0,
+                            "name": "Coke 330ml zero"
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Diet Coke 330ml"
+                                },
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Coke 330ml"
+                                }
+                            ],
+                            "dist": 0.9363557016433446,
+                            "name": ""
+                        }
+                    ],
+                    "dist": 1.2940212517574818,
+                    "name": ""
+                },
+                {
+                    "children": [
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Coke 2l bottle"
+                                },
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Diet Coke 2l bottle"
+                                }
+                            ],
+                            "dist": 1.3464052138936478,
+                            "name": ""
+                        },
+                        {
+                            "children": [
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Coke 330 x6"
+                                },
+                                {
+                                    "children": [],
+                                    "dist": 0,
+                                    "name": "Fanta 2l bottle"
+                                }
+                            ],
+                            "dist": 1.3818364592092653,
+                            "name": ""
+                        }
+                    ],
+                    "dist": 1.3961608073570895,
+                    "name": ""
+                }
+            ],
+            "dist": 1.4038062544382683,
+            "name": ""
+        }
+    ],
+    "dist": 0,
+    "name": "Root"
+}

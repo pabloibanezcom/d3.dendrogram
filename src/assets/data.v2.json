@@ -1,0 +1,108 @@
+{
+    "elements": [
+        {
+            "name": "Fizzy drinks",
+            "length": 0.2,
+            "elements": [
+                {
+                    "name": "Cola",
+                    "length": 0.3,
+                    "elements": [
+                        {
+                            "name": "Multipack cans",
+                            "length": 0.2,
+                            "elements": [
+                                {
+                                    "name": "Coca-Cola 8x330ml",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Diet Coke 8x330ml",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Coca-Cola Zero 8x330ml",
+                                    "length": 0.15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sharing bottles",
+                            "length": 0.2,
+                            "elements": [
+                                {
+                                    "name": "Coca-Cola 1.75L",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Diet Coke 1.75L",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Coca-Cola Zero 1.75L",
+                                    "length": 0.15
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Single bottles & cans",
+                            "length": 0.2,
+                            "elements": [
+                                {
+                                    "name": "Coca-Cola 500ml",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Diet Coke 500ml",
+                                    "length": 0.15
+                                },
+                                {
+                                    "name": "Coca-Cola Zero 500ml",
+                                    "length": 0.15
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Fruit flavoured",
+                    "length": 0.4,
+                    "elements":[
+                        {
+                            "name": "Fanta Orange 6x330ml",
+                            "length": 0.2
+                        },
+                        {
+                            "name": "Fanta Orange Zero 6x330ml",
+                            "length": 0.2
+                        },
+                        {
+                            "name": "Sprite Zero 6x330ml",
+                            "length": 0.2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spirits",
+            "length": 0.2,
+            "elements": [
+                {
+                    "name": "Rum",
+                    "length": 0.3,
+                    "elements":[
+                        {
+                            "name": "Brugal 70cl",
+                            "length": 0.5
+                        },
+                        {
+                            "name": "Havana Club 70cl",
+                            "length": 0.5
+                        }
+                    ]
+                }
+            ] 
+        }
+    ]
+}

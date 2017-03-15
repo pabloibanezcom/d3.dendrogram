@@ -1,0 +1,126 @@
+{
+    "name": "All",
+    "substitutability": 0,
+    "children": [
+        {
+            "name": "Fizzy drinks",
+            "substitutability": 0.2,
+            "children": [
+                {
+                    "name": "Cola",
+                    "substitutability": 0.1,
+                    "children": [
+                        {
+                            "name": "Multipack cans",
+                            "substitutability": 0.2,
+                            "children": [
+                                {
+                                    "name": "Sugar",
+                                    "substitutability": 0.25,
+                                    "children": [
+                                        {
+                                            "name": "Coca-Cola 8x330ml",
+                                            "substitutability": 0.15
+                                        },
+                                        {
+                                            "name": "Coca-Cola Life 8x330ml",
+                                            "substitutability": 0.15
+                                        }
+                                    ]
+                                },
+                                {
+                                    "name": "Not sugar",
+                                    "substitutability": 0.35,
+                                    "children": [
+                                        {
+                                            "name": "Diet Coke 8x330ml",
+                                            "substitutability": 0.05
+                                        },
+                                        {
+                                            "name": "Coca-Cola Zero 8x330ml",
+                                            "substitutability": 0.05
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Sharing bottles",
+                            "substitutability": 0.4,
+                            "children": [
+                                {
+                                    "name": "Coca-Cola 1.75L",
+                                    "substitutability": 0.2
+                                },
+                                {
+                                    "name": "Diet Coke 1.75L",
+                                    "substitutability": 0.2
+                                },
+                                {
+                                    "name": "Coca-Cola Zero 1.75L",
+                                    "substitutability": 0.2
+                                }
+                            ]
+                        },
+                        {
+                            "name": "Single bottles & cans",
+                            "substitutability": 0.32,
+                            "children": [
+                                {
+                                    "name": "Coca-Cola 500ml",
+                                    "substitutability": 0.2
+                                },
+                                {
+                                    "name": "Diet Coke 500ml",
+                                    "substitutability": 0.2
+                                },
+                                {
+                                    "name": "Coca-Cola Zero 500ml",
+                                    "substitutability": 0.2
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "Fruit flavoured",
+                    "substitutability": 0.6,
+                    "children": [
+                        {
+                            "name": "Fanta Orange 6x330ml",
+                            "substitutability": 0.2
+                        },
+                        {
+                            "name": "Fanta Orange Zero 6x330ml",
+                            "substitutability": 0.2
+                        },
+                        {
+                            "name": "Sprite Zero 6x330ml",
+                            "substitutability": 0.2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spirits",
+            "substitutability": 0.7,
+            "children": [
+                {
+                    "name": "Rum",
+                    "substitutability": 0,
+                    "children": [
+                        {
+                            "name": "Brugal 70cl",
+                            "substitutability": 0.1
+                        },
+                        {
+                            "name": "Havana Club 70cl",
+                            "substitutability": 0.1
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

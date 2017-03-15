@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { PhylogramComponent } from './shared/phylogram/phylogram.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PhylogramComponent
   ],
   imports: [
     BrowserModule,
