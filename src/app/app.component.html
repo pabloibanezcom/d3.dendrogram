@@ -1,2 +1,67 @@
-<h1>Phylogram</h1>
-<app-phylogram></app-phylogram>
+<div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" [attr.aria-expanded]="!isCollapsed" (click)="toggleCollapse()">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" routerLink="/">Dendrogram</a>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+                <app-phylogram [data]="data" [options]="options"></app-phylogram>
+            </div>
+            <div class="col-lg-4"><label>Options</label></div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <span>Width</span>
+                    <input class="form-control" name="width" type="number" [(ngModel)]="options.width" />
+                </div>
+                <div class="form-group">
+                    <span>Height</span>
+                    <input class="form-control" name="height" type="number" [(ngModel)]="options.height" />
+                </div>
+                <div class="form-group">
+                    <span>Label height</span>
+                    <input class="form-control" name="labelHeight" type="number" [(ngModel)]="options.labelHeight" />
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <span>Ratiolength property</span>
+                    <input class="form-control" name="ratioLengthPropertyName" type="string" [(ngModel)]="options.ratioLengthPropertyName" />
+                </div>
+                <div class="form-group">
+                    <span>Name property</span>
+                    <input class="form-control" name="namePropertyName" type="string" [(ngModel)]="options.namePropertyName" />
+                </div>
+                <div class="form-group ">
+                    <span>Skip labels</span>
+                    <input name="skipLabels" type="checkbox" [(ngModel)]="options.skipLabels" />
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="form-group">
+                    <label for="comment">Data JSON:</label>
+                    <textarea class="form-control" rows="16" name="dataString" [(ngModel)]="dataString"></textarea>
+                </div>
+                <button type="button" (click)="renderData()" class="btn btn-primary">Render data</button>
+            </div>
+        </div>
+    </div>
+    <!-- /.row -->
+
+</div>
