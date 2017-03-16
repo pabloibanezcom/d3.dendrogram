@@ -1,75 +1,345 @@
 {
+    "dist": 1.60526315789474,
+    "name": "node38",
     "children": [
         {
+            "name": "2058948"
+        },
+        {
+            "dist": 1.54054054054054,
+            "name": "node37",
             "children": [
                 {
-                    "children": [
-                        {
-                            "children": [],
-                            "dist": 0,
-                            "name": "Coke 330ml zero"
-                        },
-                        {
-                            "children": [
-                                {
-                                    "children": [],
-                                    "name": "Diet Coke 330ml"
-                                },
-                                {
-                                    "children": [],
-                                    "dist": 0,
-                                    "name": "Coke 330ml"
-                                }
-                            ],
-                            "dist": 0.9363557016433446,
-                            "name": ""
-                        }
-                    ],
-                    "dist": 1.2940212517574818,
-                    "name": ""
+                    "name": "2266275"
                 },
                 {
+                    "dist": 1.38888888888889,
+                    "name": "node36",
                     "children": [
                         {
-                            "children": [
-                                {
-                                    "children": [],
-                                    "name": "Coke 2l bottle"
-                                },
-                                {
-                                    "children": [],
-                                    "dist": 0,
-                                    "name": "Diet Coke 2l bottle"
-                                }
-                            ],
-                            "dist": 1.3264052138936478,
-                            "name": ""
+                            "name": "2060880"
                         },
                         {
+                            "dist": 1,
+                            "name": "node35",
                             "children": [
                                 {
-                                    "children": [],
-                                    "dist": 0,
-                                    "name": "Coke 330 x6"
+                                    "name": "2058917"
                                 },
                                 {
-                                    "children": [],
-                                    "dist": 0,
-                                    "name": "Fanta 2l bottle"
+                                    "dist": 0.823529411764706,
+                                    "name": "node34",
+                                    "children": [
+                                        {
+                                            "name": "7782707"
+                                        },
+                                        {
+                                            "dist": 0.757575757575758,
+                                            "name": "node33",
+                                            "children": [
+                                                {
+                                                    "name": "7713690"
+                                                },
+                                                {
+                                                    "dist": 0.666666666666667,
+                                                    "name": "node32",
+                                                    "children": [
+                                                        {
+                                                            "dist": 0,
+                                                            "name": "node20",
+                                                            "children": [
+                                                                {
+                                                                    "name": "7293639"
+                                                                },
+                                                                {
+                                                                    "dist": 0,
+                                                                    "name": "node19",
+                                                                    "children": [
+                                                                        {
+                                                                            "name": "130530"
+                                                                        },
+                                                                        {
+                                                                            "name": "2058269"
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "dist": 0.620689655172414,
+                                                            "name": "node31",
+                                                            "children": [
+                                                                {
+                                                                    "name": "2059013"
+                                                                },
+                                                                {
+                                                                    "dist": 0.564102564102564,
+                                                                    "name": "node30",
+                                                                    "children": [
+                                                                        {
+                                                                            "dist": 0,
+                                                                            "name": "node24",
+                                                                            "children": [
+                                                                                {
+                                                                                    "name": "7307344"
+                                                                                },
+                                                                                {
+                                                                                    "dist": 0,
+                                                                                    "name": "node23",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "name": "1041262"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "1390377"
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        },
+                                                                        {
+                                                                            "dist": 0.479166666666667,
+                                                                            "name": "node29",
+                                                                            "children": [
+                                                                                {
+                                                                                    "dist": 0,
+                                                                                    "name": "node25",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "name": "2060859"
+                                                                                        },
+                                                                                        {
+                                                                                            "name": "7712115"
+                                                                                        }
+                                                                                    ]
+                                                                                },
+                                                                                {
+                                                                                    "dist": 0.365079365079365,
+                                                                                    "name": "node28",
+                                                                                    "children": [
+                                                                                        {
+                                                                                            "dist": 0,
+                                                                                            "name": "node22",
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "7712113"
+                                                                                                },
+                                                                                                {
+                                                                                                    "dist": 0,
+                                                                                                    "name": "node21",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "name": "284714"
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "name": "7560548"
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        },
+                                                                                        {
+                                                                                            "dist": 0.3,
+                                                                                            "name": "node27",
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "2060835"
+                                                                                                },
+                                                                                                {
+                                                                                                    "dist": 0.125,
+                                                                                                    "name": "node26",
+                                                                                                    "children": [
+                                                                                                        {
+                                                                                                            "dist": 0,
+                                                                                                            "name": "node15",
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "name": "7771903"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "dist": 0,
+                                                                                                                    "name": "node14",
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "name": "7771766"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "dist": 0,
+                                                                                                                            "name": "node13",
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "name": "7761638"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "dist": 0,
+                                                                                                                                    "name": "node12",
+                                                                                                                                    "children": [
+                                                                                                                                        {
+                                                                                                                                            "name": "7741925"
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "dist": 0,
+                                                                                                                                            "name": "node11",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "name": "7741770"
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "dist": 0,
+                                                                                                                                                    "name": "node10",
+                                                                                                                                                    "children": [
+                                                                                                                                                        {
+                                                                                                                                                            "name": "7712394"
+                                                                                                                                                        },
+                                                                                                                                                        {
+                                                                                                                                                            "dist": 0,
+                                                                                                                                                            "name": "node9",
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "name": "7701525"
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "dist": 0,
+                                                                                                                                                                    "name": "node8",
+                                                                                                                                                                    "children": [
+                                                                                                                                                                        {
+                                                                                                                                                                            "name": "7571020"
+                                                                                                                                                                        },
+                                                                                                                                                                        {
+                                                                                                                                                                            "dist": 0,
+                                                                                                                                                                            "name": "node7",
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "name": "7545146"
+                                                                                                                                                                                },
+                                                                                                                                                                                {
+                                                                                                                                                                                    "dist": 0,
+                                                                                                                                                                                    "name": "node6",
+                                                                                                                                                                                    "children": [
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "name": "7543521"
+                                                                                                                                                                                        },
+                                                                                                                                                                                        {
+                                                                                                                                                                                            "dist": 0,
+                                                                                                                                                                                            "name": "node5",
+                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "name": "6999130"
+                                                                                                                                                                                                },
+                                                                                                                                                                                                {
+                                                                                                                                                                                                    "dist": 0,
+                                                                                                                                                                                                    "name": "node4",
+                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "name": "3512913"
+                                                                                                                                                                                                        },
+                                                                                                                                                                                                        {
+                                                                                                                                                                                                            "dist": 0,
+                                                                                                                                                                                                            "name": "node3",
+                                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "name": "2820422"
+                                                                                                                                                                                                                },
+                                                                                                                                                                                                                {
+                                                                                                                                                                                                                    "dist": 0,
+                                                                                                                                                                                                                    "name": "node2",
+                                                                                                                                                                                                                    "children": [
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "name": "2570303"
+                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                        {
+                                                                                                                                                                                                                            "dist": 0,
+                                                                                                                                                                                                                            "name": "node1",
+                                                                                                                                                                                                                            "children": [
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                    "name": "2097"
+                                                                                                                                                                                                                                },
+                                                                                                                                                                                                                                {
+                                                                                                                                                                                                                                    "name": "2253664"
+                                                                                                                                                                                                                                }
+                                                                                                                                                                                                                            ]
+                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                    ]
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                            ]
+                                                                                                                                                                                                        }
+                                                                                                                                                                                                    ]
+                                                                                                                                                                                                }
+                                                                                                                                                                                            ]
+                                                                                                                                                                                        }
+                                                                                                                                                                                    ]
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        }
+                                                                                                                                                                    ]
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    ]
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        },
+                                                                                                        {
+                                                                                                            "dist": 0,
+                                                                                                            "name": "node18",
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "name": "7676861"
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "dist": 0,
+                                                                                                                    "name": "node17",
+                                                                                                                    "children": [
+                                                                                                                        {
+                                                                                                                            "name": "7560522"
+                                                                                                                        },
+                                                                                                                        {
+                                                                                                                            "dist": 0,
+                                                                                                                            "name": "node16",
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "name": "130509"
+                                                                                                                                },
+                                                                                                                                {
+                                                                                                                                    "name": "6506115"
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    ]
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    ]
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    ]
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    ]
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 }
-                            ],
-                            "dist": 1.3018364592092653,
-                            "name": ""
+                            ]
                         }
-                    ],
-                    "dist": 1.3561608073570895,
-                    "name": ""
+                    ]
                 }
-            ],
-            "dist": 1.4038062544382683,
-            "name": ""
+            ]
         }
-    ],
-    "dist": 0,
-    "name": "Root"
+    ]
 }

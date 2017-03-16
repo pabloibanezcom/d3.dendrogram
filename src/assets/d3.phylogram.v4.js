@@ -165,7 +165,6 @@ if (!d3) { throw "d3 wasn't included!" };
   d3.phylogram.build = function (selector, data, options) {
     options = options || {}
 
-    data = data.children[0];
     const d = d3.phylogram.generateDimensions(selector, data, options);
     const vis = d3.phylogram.createVis(selector, d);
     const rootNode = d3.phylogram.transformRootNode(data, d);
