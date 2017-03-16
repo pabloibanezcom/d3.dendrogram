@@ -21,7 +21,7 @@ export class AppComponent {
       ratioLengthPropertyName: 'dist',
       namePropertyName: 'name'
     };
-    http.get('assets/d3-dendrogram.json')
+    http.get('assets/big-JSON.json')
       .map(res => res.json())
       .subscribe(data => this.loadData(data),
       err => console.log(err));

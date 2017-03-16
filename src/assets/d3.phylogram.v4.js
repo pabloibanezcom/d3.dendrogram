@@ -52,7 +52,7 @@ if (!d3) { throw "d3 wasn't included!" };
 
   d3.phylogram.createVis = function (selector, d) {
     return d3.select(selector).append("svg:svg")
-      .attr("width", d.w + 300)
+      .attr("width", d.w + 100)
       .attr("height", d.h + 30)
       .append("svg:g")
       .attr("transform", "translate(20, 20)");

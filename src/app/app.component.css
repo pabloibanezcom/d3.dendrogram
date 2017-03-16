@@ -2,6 +2,7 @@
     width: 1400px;
 }
 
-inline {
-    display:inline;
+.phylogram-container {
+    height: 600px;
+    overflow-y: auto;
 }
