@@ -29,4 +29,11 @@ export class PhylogramComponent implements OnInit {
     d3.phylogram.build('#phylogram', this.data, this.options);
   }
 
+  hideClusters(clusters: Array<any>) {
+    this.render();
+    clusters.forEach((cluster) => {
+      d3.phylogram.hideNodePath('n-' + cluster.name);
+    });
+  }
+
 }

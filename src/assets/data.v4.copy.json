@@ -1,40 +1,44 @@
 {
-    "dist": 1,
-    "name": "all",
+    "name": "All",
+    "substitutability": 0,
     "children": [
         {
             "name": "Fizzy drinks",
-            "dist": 0.8,
+            "substitutability": 0.2,
             "children": [
                 {
                     "name": "Cola",
-                    "dist": 0.6,
+                    "substitutability": 0.1,
                     "children": [
                         {
                             "name": "Multipack cans",
-                            "dist": 0.4,
+                            "substitutability": 0.2,
                             "children": [
                                 {
                                     "name": "Sugar",
-                                    "dist": 0.25,
+                                    "substitutability": 0.25,
                                     "children": [
                                         {
-                                            "name": "Coca-Cola 8x330ml"
+                                            "name": "Coca-Cola 8x330ml",
+                                            "substitutability": 0.15
                                         },
                                         {
-                                            "name": "Coca-Cola Life 8x330ml"
+                                            "name": "Coca-Cola Life 8x330ml",
+                                            "substitutability": 0.15
                                         }
                                     ]
                                 },
                                 {
                                     "name": "Not sugar",
-                                    "dist": 0.25,
+                                    "substitutability": 0.35,
                                     "children": [
                                         {
-                                            "name": "Diet Coke 8x330ml"
+                                            "name": "Diet Coke 8x330ml",
+                                            "substitutability": 0.05
                                         },
                                         {
-                                            "name": "Coca-Cola Zero 8x330ml"
+                                            "name": "Coca-Cola Zero 8x330ml",
+                                            "substitutability": 0.05
                                         }
                                     ]
                                 }
@@ -42,31 +46,37 @@
                         },
                         {
                             "name": "Sharing bottles",
-                            "dist": 0.4,
+                            "substitutability": 0.4,
                             "children": [
                                 {
-                                    "name": "Coca-Cola 1.75L"
+                                    "name": "Coca-Cola 1.75L",
+                                    "substitutability": 0.2
                                 },
                                 {
-                                    "name": "Diet Coke 1.75L"
+                                    "name": "Diet Coke 1.75L",
+                                    "substitutability": 0.2
                                 },
                                 {
-                                    "name": "Coca-Cola Zero 1.75L"
+                                    "name": "Coca-Cola Zero 1.75L",
+                                    "substitutability": 0.2
                                 }
                             ]
                         },
                         {
                             "name": "Single bottles & cans",
-                            "dist": 0.4,
+                            "substitutability": 0.32,
                             "children": [
                                 {
-                                    "name": "Coca-Cola 500ml"
+                                    "name": "Coca-Cola 500ml",
+                                    "substitutability": 0.2
                                 },
                                 {
-                                    "name": "Diet Coke 500ml"
+                                    "name": "Diet Coke 500ml",
+                                    "substitutability": 0.2
                                 },
                                 {
-                                    "name": "Coca-Cola Zero 500ml"
+                                    "name": "Coca-Cola Zero 500ml",
+                                    "substitutability": 0.2
                                 }
                             ]
                         }
@@ -74,16 +84,19 @@
                 },
                 {
                     "name": "Fruit flavoured",
-                    "dist": 0.5,
+                    "substitutability": 0.6,
                     "children": [
                         {
-                            "name": "Fanta Orange 6x330ml"
+                            "name": "Fanta Orange 6x330ml",
+                            "substitutability": 0.2
                         },
                         {
-                            "name": "Fanta Orange Zero 6x330ml"
+                            "name": "Fanta Orange Zero 6x330ml",
+                            "substitutability": 0.2
                         },
                         {
-                            "name": "Sprite Zero 6x330ml"
+                            "name": "Sprite Zero 6x330ml",
+                            "substitutability": 0.2
                         }
                     ]
                 }
@@ -91,17 +104,19 @@
         },
         {
             "name": "Spirits",
-            "dist": 0.6,
+            "substitutability": 0.7,
             "children": [
                 {
                     "name": "Rum",
-                    "dist": 0.4,
+                    "substitutability": 0,
                     "children": [
                         {
-                            "name": "Brugal 70cl"
+                            "name": "Brugal 70cl",
+                            "substitutability": 0.1
                         },
                         {
-                            "name": "Havana Club 70cl"
+                            "name": "Havana Club 70cl",
+                            "substitutability": 0.1
                         }
                     ]
                 }

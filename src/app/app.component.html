@@ -23,7 +23,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="phylogram-container">
-                    <app-phylogram [data]="data" [options]="options"></app-phylogram>
+                    <app-phylogram #phylogram [data]="data" [options]="options"></app-phylogram>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -62,6 +62,19 @@
                             </div>
                         </div>
                     </accordion-group>
+                    <accordion-group #groupTab>
+                        <div accordion-heading>
+                            <i class="fa fa-left fa-code-fork"></i>Group Nodes
+                            <span *ngIf="selectedClusters.length" class="badge badge-success" [innerHtml]="selectedClusters.length"></span>
+                            <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-down': groupTab?.isOpen, 'glyphicon-chevron-right': !groupTab?.isOpen}"></i>
+                        </div>
+                        <div class="cluster-container">
+                            <ul class="list-group clusters">
+                                <a class="list-group-item" [ngClass]="{'active': cluster.isSelected}" (click)="toggleCluster(cluster)" *ngFor="let cluster of clusters">{{cluster.name}}</a>
+                                <div class="clearfix"></div>
+                            </ul>
+                        </div>
+                    </accordion-group>
                     <accordion-group #dataTab>
                         <div accordion-heading>
                             <i class="fa fa-left fa-file-text-o"></i>Data JSON
@@ -74,6 +87,9 @@
                 </accordion>
                 <button type="button" (click)="renderData()" class="btn btn-primary btn-block btn-render">
                     <i class="fa fa-left fa-refresh"></i>Render data
+                    </button>
+                <button type="button" (click)="filterClusters()" class="btn btn-success btn-block btn-render">
+                    <i class="fa fa-left fa-filter"></i>Filter clusters
                     </button>
             </div>
         </div>

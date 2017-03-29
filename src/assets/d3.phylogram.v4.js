@@ -54,6 +54,7 @@ if (!d3) { throw "d3 wasn't included!" };
     return d3.select(selector).append("svg:svg")
       .attr("width", d.w + 100)
       .attr("height", d.h + 30)
+      .attr("style", "width: 100%")
       .append("svg:g")
       .attr("transform", "translate(20, 20)");
   }
@@ -103,18 +104,27 @@ if (!d3) { throw "d3 wasn't included!" };
     function calculateYPosition(length, parentY) {
       return parentY + (d.w * (length / fullScale));
     }
+
   }
 
   d3.phylogram.drawPaths = function (vis, rootNode) {
     var diagonal = d3.phylogram.rightAngleDiagonal();
+    var createClass = function (node) {
+      return "link n-" + node.data.name.replace(' ', '-');
+    }
     var link = vis.selectAll("path.link")
       .data(rootNode.descendants().slice(1))
       .enter().append("svg:path")
-      .attr("class", "link")
+      .attr("class", createClass)
       .attr("d", diagonal)
       .attr("fill", "none")
       .attr("stroke", "#aaa")
       .attr("stroke-width", "3px");
+    var link2 = vis.selectAll(".link").enter().append('svg:circle')
+      .attr("r", 4.5)
+      .attr('fill', 'steelblue')
+      .attr('stroke', '#369')
+      .attr('stroke-width', '2px');
   }
 
   d3.phylogram.drawLastNodes = function (vis, rootNode) {
@@ -162,6 +172,8 @@ if (!d3) { throw "d3 wasn't included!" };
       .text(function (d) { return d.data[nameProperty]; });
   }
 
+  // Public methods
+
   d3.phylogram.build = function (selector, data, options) {
     options = options || {}
 
@@ -173,8 +185,18 @@ if (!d3) { throw "d3 wasn't included!" };
     d3.phylogram.applyLengthRatio(rootNode, d, options);
     d3.phylogram.drawPaths(vis, rootNode);
     d3.phylogram.drawLastNodes(vis, rootNode);
-    //d3.phylogram.styleTreeNodes(vis)
+    d3.phylogram.styleTreeNodes(vis)
     d3.phylogram.appendLabels(vis, options);
+    d3.phylogram.vis = vis;
   }
+
+  d3.phylogram.hideNodePath = function (nodeName) {
+    vis = d3.phylogram.vis;
+    var aux = vis.selectAll("." + nodeName);
+    console.log(aux);
+    vis.select("." + nodeName)
+      .classed("link hidden", true);
+  }
+
 
 }());
