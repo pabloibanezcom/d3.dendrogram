@@ -3,6 +3,7 @@ import { Component, OnInit, Input, ViewChild, OnChanges, ElementRef } from '@ang
 import { Phylogram } from '../../phylogram/phylogram';
 import { PhylogramOptions } from '../../phylogram/phylogramOptions';
 
+
 declare var d3: any;
 @Component({
   selector: 'app-phylogram',
@@ -31,7 +32,6 @@ export class PhylogramComponent implements OnInit {
 
   render() {
     this.phylogramComponent.nativeElement.innerHTML = '';
-    //d3.phylogram.build('#phylogram', this.data, this.options);
     this.phylogram = new Phylogram('#phylogram', this.data, this.options);
 
   }
