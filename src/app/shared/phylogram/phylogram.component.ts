@@ -1,5 +1,8 @@
 import { Component, OnInit, Input, ViewChild, OnChanges, ElementRef } from '@angular/core';
 
+import { Phylogram } from '../../phylogram/phylogram';
+import { PhylogramOptions } from '../../phylogram/phylogramOptions';
+
 declare var d3: any;
 @Component({
   selector: 'app-phylogram',
@@ -9,8 +12,10 @@ declare var d3: any;
 
 export class PhylogramComponent implements OnInit {
   @Input() data: any;
-  @Input() options: any;
-  @ViewChild('phylogram') phylogram: ElementRef;
+  @Input() options: PhylogramOptions;
+  @ViewChild('phylogram') phylogramComponent: ElementRef;
+
+  phylogram: Phylogram;
 
   constructor() {
   }
@@ -25,8 +30,10 @@ export class PhylogramComponent implements OnInit {
   }
 
   render() {
-    this.phylogram.nativeElement.innerHTML = '';
-    d3.phylogram.build('#phylogram', this.data, this.options);
+    this.phylogramComponent.nativeElement.innerHTML = '';
+    //d3.phylogram.build('#phylogram', this.data, this.options);
+    this.phylogram = new Phylogram('#phylogram', this.data, this.options);
+
   }
 
   hideClusters(clusters: Array<any>) {

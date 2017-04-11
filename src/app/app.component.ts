@@ -2,6 +2,8 @@ import { Component, ViewChild } from '@angular/core';
 import { Http } from '@angular/http';
 import 'rxjs/Rx';
 
+import { PhylogramOptions } from '../assets/phylogramOptions';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -9,7 +11,7 @@ import 'rxjs/Rx';
 })
 export class AppComponent {
   @ViewChild('phylogram') phylogram;
-  options: any;
+  options: PhylogramOptions;
   data: any;
   clusters: Array<any>;
   selectedClusters: Array<any>;
@@ -24,7 +26,7 @@ export class AppComponent {
       ratioLengthPropertyName: 'dist',
       namePropertyName: 'name'
     };
-    http.get('assets/big-JSON.json')
+    http.get('assets/data.v4.json')
       .map(res => res.json())
       .subscribe(data => this.loadData(data),
       err => console.log(err));
